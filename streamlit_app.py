@@ -13,6 +13,8 @@ from pandas.api.types import (
     is_object_dtype,
 )
 
+st.set_page_config(layout="wide")
+
 st.title("Angebote der Obdachlosenhilfe")
 
 def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
