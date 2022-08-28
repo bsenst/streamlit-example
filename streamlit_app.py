@@ -77,7 +77,7 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
                     default=list(df[column].unique()),
                 )
                 if user_text_input:
-                    df = df[df[column].astype(str).str.contains(user_text_input)]
+                    df = df[df[column].isin(user_text_input)]
     return df
 
 df = pd.read_json("obdachlosenhilfe-7v.json")
