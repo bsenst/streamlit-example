@@ -18,7 +18,7 @@ st.set_page_config(layout="wide")
 st.title("Angebote der Obdachlosenhilfe")
 
 def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
-    modify = st.checkbox("Filter hinzufügen")
+    # modify = st.checkbox("Filter hinzufügen")
     
     if not modify:
         return df
