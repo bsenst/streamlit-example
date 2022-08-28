@@ -71,8 +71,10 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
                     start_date, end_date = user_date_input
                     df = df.loc[df[column].between(start_date, end_date)]
             else:
-                user_text_input = right.text_input(
-                    f"Substring oder regex in {column}",
+                user_text_input = right.multiselect(
+                    f"Werte für {column}",
+                    df[column].unique(),
+                    default=list(df[column].unique()),
                 )
                 if user_text_input:
                     df = df[df[column].astype(str).str.contains(user_text_input)]
