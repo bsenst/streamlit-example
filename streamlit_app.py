@@ -23,7 +23,7 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     
     df = df.copy()
 
-    for col in df.columns[:2]:
+    for col in df.columns:
         if is_object_dtype(df[col]):
             try:
                 df[col] = pd.to_datetime(df[col])
@@ -36,7 +36,7 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     modification_container = st.container()
 
     with modification_container:
-        to_filter_columns = st.multiselect("Filter anwenden", df.columns)
+        to_filter_columns = st.multiselect("Filter anwenden", df.columns[:2])
         for column in to_filter_columns:
             left, right = st.columns((1, 20))
             if is_categorical_dtype(df[column]) or df[column].nunique() < 10:
