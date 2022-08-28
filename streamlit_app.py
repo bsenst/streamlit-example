@@ -19,7 +19,8 @@ st.title("Angebote der Obdachlosenhilfe")
 
 def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     # modify = st.checkbox("Filter hinzufügen")
-    
+    modify = True
+
     if not modify:
         return df
     
