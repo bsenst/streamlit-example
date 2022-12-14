@@ -17,6 +17,11 @@ st.set_page_config(layout="wide")
 
 st.title("Angebote der Obdachlosenhilfe")
 
+import streamlit.components.v1 as components
+
+# embed streamlit docs in a streamlit app
+components.iframe("map-obdachlosenhilfe.html")
+
 def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     # modify = st.checkbox("Filter hinzufügen")
     modify = True
