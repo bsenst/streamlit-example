@@ -23,10 +23,6 @@ HtmlFile = open("./map-obdachlosenhilfe.html", 'r', encoding='utf-8')
 source_code = HtmlFile.read() 
 components.html(source_code, height=1200)
 
-HtmlFile = open("./wohnungslosigkeit-deutschland-karte.html", 'r', encoding='utf-8')
-source_code = HtmlFile.read() 
-components.html(source_code, height=1200)
-
 def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     # modify = st.checkbox("Filter hinzufügen")
     modify = True
