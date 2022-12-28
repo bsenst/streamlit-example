@@ -3,6 +3,6 @@ spacy_streamlit
 streamlit>=0.86.0
 spacy>=2.2.0,<3.0.0
 https://github.com/explosion/spacy-models/releases/download/de_core_news_sm-2.2.0/de_core_news_sm-2.2.0.tar.gz#egg=de_core_news_sm
-https://github.com/explosion/spacy-models/releases/download/de_core_news_sm-2.2.0/de_core_news_md-2.2.0.tar.gz#egg=de_core_news_md
-https://github.com/explosion/spacy-models/releases/download/de_core_news_sm-2.2.0/de_core_news_lg-2.2.0.tar.gz#egg=de_core_news_lg
+https://github.com/explosion/spacy-models/releases/download/de_core_news_md-2.2.0/de_core_news_md-2.2.0.tar.gz#egg=de_core_news_md
+https://github.com/explosion/spacy-models/releases/download/de_core_news_lg-2.2.0/de_core_news_lg-2.2.0.tar.gz#egg=de_core_news_lg
 pandas
