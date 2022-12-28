@@ -7,4 +7,4 @@ https://github.com/explosion/spacy-models/releases/download/de_core_news_md-2.2.
 pandas
 matplotlib
 seaborn
-PIL
+Pillow
