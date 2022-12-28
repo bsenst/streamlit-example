@@ -6,3 +6,4 @@ https://github.com/explosion/spacy-models/releases/download/de_core_news_sm-2.2.
 https://github.com/explosion/spacy-models/releases/download/de_core_news_md-2.2.0/de_core_news_md-2.2.0.tar.gz#egg=de_core_news_md
 pandas
 matplotlib
+seaborn
