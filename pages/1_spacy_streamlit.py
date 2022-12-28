@@ -1,7 +1,7 @@
 import streamlit as st
 import spacy_streamlit
 
-models = ["de_core_news_sm", "de_core_news_sm"]
+models = ["de_core_news_sm", "de_core_news_md"]
 
 default_text = """Mit seiner Tagesaufenthalts- und Übernachtungsstätte verfolgt das Harburger Rote Kreuz das Ziel, Not und Hilfebedürftigkeit von obdachlosen Menschen in Harburg sowohl kurzfristig zu lindern als auch langfristig zu beheben.
 
