@@ -9,7 +9,7 @@ import os
 from matplotlib.backends.backend_agg import RendererAgg
 
 #Loading the data
-@st.cache
+#@st.cache
 def get_data_clusters():
      return pd.read_csv(os.path.join(os.getcwd(),'df_clusters.csv'), index_col=0)
 
