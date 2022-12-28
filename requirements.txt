@@ -3,4 +3,3 @@ spacy_streamlit
 streamlit>=0.86.0
 spacy>=2.2.0,<3.0.0
 pandas
-!python -m spacy download de_core_news_md
