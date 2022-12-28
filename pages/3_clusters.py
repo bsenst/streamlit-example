@@ -11,7 +11,7 @@ from matplotlib.backends.backend_agg import RendererAgg
 #Loading the data
 @st.cache
 def get_data_clusters():
-     return pd.read_csv(os.path.join(os.getcwd(),'df_clusters.csv'))
+     return pd.read_csv(os.path.join(os.getcwd(),'df_clusters.csv'), index_col=0)
 
 #configuration of the page
 st.set_page_config(layout="wide")
