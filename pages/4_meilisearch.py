@@ -9,14 +9,14 @@ st.title("meilisearch")
 # source_code = HtmlFile.read() 
 # components.html(source_code, height=600, scrolling=True)
 
-js = f"""
+js = """
     const streamlit_example_search_key = process.env.streamlit_example_search_key
 
     const search = instantsearch({
       indexName: "web_preprocessed",
       searchClient: instantMeiliSearch(
         "https://ms-6b9ae8855fa6-1312.fra.meilisearch.io",
-        {st.secrets["streamlit_example_search_key"]}, // api key for searching
+        """ + st.secrets["streamlit_example_search_key"] + """, // api key for searching
       )
     });
       
