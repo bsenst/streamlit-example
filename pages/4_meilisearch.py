@@ -9,8 +9,7 @@ st.title("meilisearch")
 # source_code = HtmlFile.read() 
 # components.html(source_code, height=600, scrolling=True)
 
-js = f'''
-
+js = f"""
     const streamlit_example_search_key = process.env.streamlit_example_search_key
 
     const search = instantsearch({
@@ -44,7 +43,7 @@ js = f'''
     
     search.start();
 
-'''
+"""
 
 html = f"""
 <!DOCTYPE html>
