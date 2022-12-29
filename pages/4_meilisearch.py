@@ -34,14 +34,20 @@ my_js = """
 
 # Wrapt the javascript as html code
 my_html = f"""
-    <div class="wrapper">
-      <div id="searchbox" focus></div>
-      <div id="hits"></div>
-    </div>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@meilisearch/instant-meilisearch/templates/basic_search.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+        <div id="searchbox" focus></div>
+        <div id="hits"></div>
+        </div>
+    </body>
     <script src="https://cdn.jsdelivr.net/npm/@meilisearch/instant-meilisearch/dist/instant-meilisearch.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4"></script>
     <script>{my_js}</script>"""
 
 # Execute your app
-st.title("Javascript example")
+st.title("meilisearch example")
 html(my_html)
