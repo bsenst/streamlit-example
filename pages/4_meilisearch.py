@@ -4,6 +4,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 st.title("meilisearch")
+st.caption("search a subset of the dataset, limited search only as offered by free tier https://www.meilisearch.com/")
 
 HtmlFile = open("./meilisearch.html", 'r', encoding='utf-8')
 source_code = HtmlFile.read() 
