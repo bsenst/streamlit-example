@@ -11,7 +11,7 @@ from haystack.nodes import TfidfRetriever
 retriever = TfidfRetriever(document_store=document_store)
 
 from haystack.nodes import TransformersReader
-reader = TransformersReader(model_name_or_path="deepset/xlm-roberta-base-squad2", tokenizer="deepset/xlm-roberta-base-squad2", use_gpu=-1)
+reader = TransformersReader(model_name_or_path="deepset/gelectra-base-germanquad-distilled", tokenizer="deepset/gelectra-base-germanquad-distilled", use_gpu=-1)
 
 from haystack.pipelines import ExtractiveQAPipeline
 pipe = ExtractiveQAPipeline(reader, retriever)
