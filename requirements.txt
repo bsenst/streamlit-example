@@ -11,3 +11,4 @@ Pillow
 algoliasearch
 requests
 st-annotated-text
+git+https://github.com/deepset-ai/haystack.git#egg=farm-haystack[colab,ocr]
