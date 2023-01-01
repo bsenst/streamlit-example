@@ -9,3 +9,5 @@ matplotlib
 seaborn
 Pillow
 algoliasearch
+requests
+st-annotated-text
