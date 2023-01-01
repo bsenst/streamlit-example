@@ -25,4 +25,5 @@ if question != "":
     )
 
     for answer in prediction["answers"]:
-        st.write(answer)
+        st.write(answer.answer)
+        st.caption(answer.score)
