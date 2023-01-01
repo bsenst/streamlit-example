@@ -34,7 +34,6 @@ st.set_page_config(
 )
 
 st.title(':crown: Haystack QA demo app')
-'*This application demonstrates how Modern NLP models can understand questions in natural language and find the answer among many documents in so called golden passages of text. It is not a >
 st.subheader('Ask me something and get an answer')
 question=st.text_input('')
 params = {'questions':[],'top_k_retrievet': 5}
