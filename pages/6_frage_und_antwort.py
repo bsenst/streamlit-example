@@ -1,7 +1,6 @@
-st.caption("https://www.kdnuggets.com/2021/10/simple-question-answering-web-app-hugging-face-pipelines.html")
-
 import streamlit as st
-# from transformers import pipeline
+
+st.caption("https://www.kdnuggets.com/2021/10/simple-question-answering-web-app-hugging-face-pipelines.html")
 
 # App title and description
 st.title("Frage und Antwort")
