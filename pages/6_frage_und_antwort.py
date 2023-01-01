@@ -16,8 +16,12 @@ reader = TransformersReader(model_name_or_path="deepset/gelectra-base-germanquad
 from haystack.pipelines import ExtractiveQAPipeline
 pipe = ExtractiveQAPipeline(reader, retriever)
 
-prediction = pipe.run(
-    query="Welche Dienste bietet das Deutsche Rote Kreuz?", params={"Retriever": {"top_k": 10}, "Reader": {"top_k": 5}}
-)
+question = st.text_input('', 'Welche Dienste bietet das Deutsche Rote Kreuz?')
 
-print(prediction["answers"])
+if question != "":
+    prediction = pipe.run(
+        query=question, params={"Retriever": {"top_k": 10}, "Reader": {"top_k": 5}}
+    )
+
+    for answer in prediction["answers"]:
+        st.write(answer)
