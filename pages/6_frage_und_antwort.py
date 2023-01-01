@@ -1,7 +1,7 @@
 import json
 
 with open("fulltext_subset.json") as infile:
-    docs_json = json.load(infile)
+    docs = json.load(infile)
 
 from haystack.document_stores import InMemoryDocumentStore
 
