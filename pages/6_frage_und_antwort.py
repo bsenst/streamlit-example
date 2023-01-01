@@ -19,18 +19,18 @@ question = st.text_input('', 'Stell deine Frage')
 
 st.write(answer)
 
-st.caption("# https://gist.github.com/demarant/d9e617fb80057692f2f7cddf00013b9b")
+st.caption("https://gist.github.com/demarant/d9e617fb80057692f2f7cddf00013b9b")
 
 import streamlit as st
 import requests
 from annotated_text import annotated_text
 
-st.set_page_config(
-     page_title="Haystack - Ask me something and get an answer!",
-     page_icon=":crown:",
-     layout="centered",
-     initial_sidebar_state="auto",
-)
+# st.set_page_config(
+#      page_title="Haystack - Ask me something and get an answer!",
+#      page_icon=":crown:",
+#      layout="centered",
+#      initial_sidebar_state="auto",
+# )
 
 st.title(':crown: Haystack QA demo app')
 st.subheader('Ask me something and get an answer')
