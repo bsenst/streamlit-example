@@ -4,10 +4,9 @@ st.header("Retrieve Documents using Vectors")
 st.subheader("Method")
 st.markdown("""
 * model and instructions provided at https://huggingface.co/svalabs/bi-electra-ms-marco-german-uncased
-* 631k documents, each having a vector of 768 floats (dimensions), results in a table with 1,9 GB size
-* calculating the vectors for all documents took 10 workers and ~72hrs (kaggle)
+* 631k documents, each having a vector of 768 floats (dimensions)
+* calculating the vectors for all documents took 10 workers and ~72hrs (kaggle) and resulted in a table with 1,9 GB size
 """)
-st.subheader("Example Queries")
 st.markdown("### Query: kleider abgeben an kleidercontainern um kleider zu spenden")
 st.code("""
 Kleiderspende - Kreisverband Rotenburg (Wümme) e.V
